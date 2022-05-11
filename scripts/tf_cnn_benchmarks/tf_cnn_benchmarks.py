@@ -25,6 +25,8 @@ from __future__ import print_function
 from absl import app
 from absl import flags as absl_flags
 import tensorflow.compat.v1 as tf
+from habana_frameworks.tensorflow import load_habana_module
+load_habana_module()
 
 import benchmark_cnn
 import cnn_util
