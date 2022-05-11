@@ -8,7 +8,6 @@ sudo docker run --rm -it \
 --runtime=habana \
 --shm-size=8gb \
 -e HABANA_VISIBLE_DEVICES=all \
---volume ~/lambda:/lambda \
 $docker_image
 
 git clone https://github.com/LambdaLabsML/benchmarks.git
